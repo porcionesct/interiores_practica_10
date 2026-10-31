@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10. Punto de luz de cruzamiento. Descripción</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones eléctricas interiores</h1>
+        <p>Práctica 10. Punto de luz de cruzamiento. Descripción</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Práctica 10 (Cruzamiento)</a></li>
+            <li><a href="rubrica_10.html">Rúbrica evaluación</a></li>
+            <li><a href="esquema_10.html">Esquema y montaje</a></li>
+            <li><a href="simulacion_10.html">Simulación</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="glosario.html">Glosario</a></li>
+            <li><a href="prl.html">Seguridad y PRL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>10.- Punto de luz de cruzamiento: una lámpara desde tres puntos</h2>
+
+        <div class="section">
+            <h3 class="section-header">1. Descripción de la práctica</h3>
+            <p>En un pasillo largo con tres puertas, el cliente quiere encender y apagar la luz <strong>desde cualquiera de los tres accesos</strong>. Para ello se instala un circuito de cruzamiento con dos conmutadores en los extremos (C1 y C2) y un <strong>conmutador de cruce</strong> (Cc) en el punto intermedio, que gobiernan una misma lámpara (L).
+Como técnico/a en formación, deberás interpretar el plano, ejecutar la canalización (tubo hasta la lámpara y canal protectora hasta los mecanismos), cablear el circuito, comprobar su funcionamiento y reproducirlo en un simulador eléctrico.</p>
+
+            <h3 class="section-header">2. Requisitos funcionales</h3>
+            <p><strong>2.1.- Alimentación:</strong> El circuito se alimenta a 230 V / 50 Hz desde la caja de registro, donde se reparten fase (F), neutro (N) y protección (T) mediante regleta.</p>
+            <p><strong>2.2.- Conmutador C1:</strong> Su borne común recibe la <strong>fase</strong>. Sus dos salidas van a las dos entradas del conmutador de cruce mediante los <strong>conmutados</strong>.</p>
+            <p><strong>2.3.- Conmutador de cruce Cc:</strong> Tiene <strong>cuatro bornes</strong> (dos entradas y dos salidas). En una posición une cada entrada con la salida de enfrente (<strong>directo</strong>) y en la otra las cruza (<strong>cruzado</strong>).</p>
+            <p><strong>2.4.- Conmutador C2:</strong> Sus dos salidas reciben los conmutados que salen de Cc, y su borne común da el <strong>retorno</strong> a la lámpara L, que vuelve al neutro.</p>
+            <p><strong>2.5.- Funcionamiento:</strong> Cualquier maniobra en C1, Cc o C2 cambia el estado de la lámpara. Se pueden intercalar tantos conmutadores de cruce como puntos de mando adicionales se necesiten.</p>
+
+            <h3 class="section-header">3. Material suministrado / recursos</h3>
+            <ul>
+                <li>Panel didáctico de montaje.</li>
+                <li>1 caja de registro con regleta (F, N, T).</li>
+                <li>3 cajas de mecanismo: 2 conmutadores (C1 y C2) y 1 conmutador de cruce (Cc).</li>
+                <li>1 portalámparas (L) con lámpara.</li>
+                <li>Canal protectora (canaleta) con accesorios de ángulo y tapas, y tubo de PVC de 16 mm con grapas.</li>
+                <li>Conductores H07V-K de 1,5 mm² en colores normalizados (marrón/negro/gris fase, conmutados y retorno; azul neutro; verde-amarillo protección).</li>
+                <li>Herramientas aisladas, pelacables, polímetro, sierra o ingletadora manual para la canal.</li>
+                <li>Simulador eléctrico (CADe_SIMU, Falstad o similar).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">4. Justificación</h3>
+            <p>El cruzamiento amplía el circuito conmutado (prácticas 7 y 9) a tres o más puntos de mando. Es habitual en pasillos, escaleras y estancias con varios accesos. Permite comprender:</p>
+            <ul class="list-indented">
+                <li>El funcionamiento del <strong>conmutador de cruce</strong> y la identificación de sus cuatro bornes.</li>
+                <li>Cómo se intercala el cruce entre los dos conmutadores sin modificar la fase ni el retorno.</li>
+                <li>La organización de muchos conductores (conmutados) en la caja de registro.</li>
+                <li>La ejecución de canalizaciones con <strong>canal protectora</strong> y tubo.</li>
+            </ul>
+            <p>Con esta práctica se completa el bloque de circuitos de alumbrado con mando desde varios puntos; el siguiente paso es el <strong>telerruptor</strong>, que resuelve el mismo problema con pulsadores.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">5. Contexto</h3>
+            <table>
+                <thead><tr><th>Aspecto</th><th>Detalle</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Público Objetivo</strong></td><td>1.º CFGM Instalaciones Eléctricas y Automáticas.</td></tr>
+                    <tr><td><strong>Módulo Profesional</strong></td><td>0235. Instalaciones eléctricas interiores.</td></tr>
+                    <tr><td><strong>Duración Estimada</strong></td><td>6–8 horas (teoría + práctica + simulación).</td></tr>
+                    <tr><td><strong>Espacio y Recursos</strong></td><td>Aula-taller con paneles de montaje, aula de informática con simulador eléctrico.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">6. Resultado de Aprendizaje y Criterios de Evaluación</h3>
+            <p><strong>RA1.</strong> Monta la instalación eléctrica de un local de vivienda, analizando el funcionamiento de sus elementos y aplicando la normativa.</p>
+            <table>
+                <thead><tr><th>Código</th><th>Criterio de Evaluación (CE)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>CE 1.1</strong></td><td>Interpreta los esquemas y la documentación técnica de la instalación (simulación).</td></tr>
+                    <tr><td><strong>CE 1.4</strong></td><td>Monta los circuitos y comprueba su correcto funcionamiento.</td></tr>
+                    <tr><td><strong>CE 1.5</strong></td><td>Ejecuta las canalizaciones, cajas de registro y cajas de mecanismos con calidad.</td></tr>
+                    <tr><td><strong>CE 1.6</strong></td><td>Realiza las conexiones de conductores y mecanismos de forma firme y segura.</td></tr>
+                </tbody>
+            </table>
+            <p>Referencia curricular: <a href="https://www.juntadeandalucia.es/boja/2009/164/1" target="_blank" rel="noopener noreferrer">Orden de 7 de julio de 2009 (BOJA) ↗</a>. Adaptar a la programación del departamento y a la normativa vigente.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">7. Metodología y Métodos de Enseñanza</h3>
+            <p><strong>Metodología:</strong> Activa, práctica y competencial, basada en Aprendizaje Basado en Retos: interpretar, montar, verificar y simular el circuito.</p>
+            <p><strong>Métodos Concretos:</strong></p>
+            <ul class="list-indented">
+                <li>Demostración guiada (identificación de los bornes del cruce con el polímetro) + práctica autónoma.</li>
+                <li>Trabajo manipulativo (canal protectora, tubo, cableado y conexión de los tres mecanismos).</li>
+                <li>Simulación del circuito con software para comprobar las ocho combinaciones.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">8. Actividades de Aprendizaje</h3>
+            <table>
+                <thead><tr><th>Fase</th><th>Actividad</th><th>CE</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Teoría</strong> (60 min)</td><td>Conmutador de cruce: símbolo, bornes y posiciones directa y cruzada. Lectura del esquema eléctrico y del esquema de montaje.</td><td>CE 1.1</td></tr>
+                    <tr><td><strong>Canalización</strong> (120 min)</td><td>Colocación de la caja de registro, tres cajas de mecanismo y portalámparas; tubo hasta L y canal protectora con ángulos hasta C1, Cc y C2.</td><td>CE 1.5</td></tr>
+                    <tr><td><strong>Cableado y conexión</strong> (120 min)</td><td>Identificación de bornes con el polímetro y conexionado completo <strong>sin tensión</strong>.</td><td>CE 1.6</td></tr>
+                    <tr><td><strong>Prueba</strong> (30 min)</td><td>Revisión del docente, puesta en tensión autorizada y prueba desde los tres puntos de mando.</td><td>CE 1.4</td></tr>
+                    <tr><td><strong>Simulación</strong> (60 min)</td><td>Reproducción del circuito y prueba de las ocho combinaciones de C1, Cc y C2.</td><td>CE 1.1</td></tr>
+                    <tr><td><strong>Final</strong> (30 min)</td><td>Grabación y entrega de los vídeos (montaje y simulación).</td><td>CE 1.1, 1.4</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">9. Agrupamientos</h3>
+            <ul class="list-indented">
+                <li><strong>Individual:</strong> Simulación y vídeo explicativo.</li>
+                <li><strong>Parejas:</strong> Montaje físico (fomenta la cooperación y la revisión mutua).</li>
+                <li><strong>Gran Grupo:</strong> Análisis de errores frecuentes en la conexión del cruce.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">10. Atención a la Diversidad e Inclusión</h3>
+            <ul class="list-indented">
+                <li>Uso de <strong>material visual ampliado</strong> y esquemas en colores.</li>
+                <li>Uso de <strong>simuladores</strong> para el alumnado con dificultades motrices.</li>
+                <li><strong>Andamiaje progresivo</strong> en la dificultad:
+                    <ul>
+                        <li>Nivel Básico: Cruzamiento con un conmutador de cruce según el plano.</li>
+                        <li>Nivel Avanzado: Dibujar y simular un cruzamiento con cuatro puntos de mando (dos conmutadores de cruce).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">11. Evaluación</h3>
+            <h4>Criterios de Evaluación:</h4>
+            <ol>
+                <li>Funcionamiento del circuito (CE 1.4).</li>
+                <li>Calidad de las canalizaciones: tubo y canal protectora (CE 1.5).</li>
+                <li>Calidad y seguridad de las conexiones (CE 1.6).</li>
+                <li>Simulación del circuito (CE 1.1).</li>
+            </ol>
+            <h4>Instrumentos / Técnicas:</h4>
+            <ul class="list-indented">
+                <li>Rúbrica de desempeño práctico.</li>
+                <li>Lista de cotejo (checklist) para el montaje.</li>
+                <li>Observación directa del trabajo en el taller.</li>
+                <li>Vídeos de montaje y simulación entregados por el alumnado.</li>
+                <li>Autoevaluación: ¿cuántos conmutadores de cruce harían falta para mandar una lámpara desde cinco puntos?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">12. Recursos y Materiales</h3>
+            <ul class="list-indented">
+                <li><strong>Hardware:</strong> Panel didáctico, caja de registro con regleta, 3 cajas de mecanismo, 2 conmutadores, 1 conmutador de cruce, portalámparas, lámpara, canal protectora y accesorios, tubo PVC, conductores H07V-K 1,5 mm², polímetro.</li>
+                <li><strong>Software:</strong> Simulador eléctrico (CADe_SIMU, <a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener noreferrer">Falstad</a> o similar).</li>
+                <li><strong>Documentación:</strong> Esquema eléctrico y esquema de montaje de la práctica, REBT, ITC-BT-21 (sistemas de instalación) e ITC-BT-25.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">13. Seguridad y Normativa</h3>
+            <ul class="list-indented">
+                <li>Montaje y modificaciones <strong>siempre sin tensión</strong>.</li>
+                <li>Aplicación de las <strong>cinco reglas de oro</strong> antes de cualquier manipulación.</li>
+                <li>Prohibido energizar el panel sin la <strong>revisión del docente</strong>.</li>
+                <li>Antes de energizar, comprobar con el polímetro que <strong>no hay cortocircuito entre fase y neutro</strong> en ninguna combinación de los tres mecanismos.</li>
+                <li>Uso de <strong>gafas de protección</strong> y sujeción firme de la canal al cortarla; eliminar rebabas que puedan dañar el aislamiento.</li>
+                <li>Normativa eléctrica básica: REBT, ITC-BT-19 (colores), ITC-BT-21 (canales protectoras y tubos) e ITC-BT-25 (circuito C1 de alumbrado, 1,5 mm², PIA 10 A).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">14. Entregables</h3>
+            <h4>Obligatorio</h4>
+            <ul class="list-indented">
+                <li>Realiza el <strong>vídeo del montaje</strong> en el taller (3–5 min).</li>
+                <li>Realiza la <strong>simulación del circuito</strong> y graba un vídeo de su funcionamiento (2–4 min).</li>
+            </ul>
+            <h4>Mejora del circuito (trabajo adicional)</h4>
+            <ol>
+                <li>Dibujar y simular un cruzamiento con <strong>cuatro puntos de mando</strong> (C1 – Cc1 – Cc2 – C2) y comprobar que la lámpara cambia de estado desde cualquiera de ellos.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CFGM Instalaciones Eléctricas y Automáticas · Módulo 0235 Instalaciones eléctricas interiores</p>
+    </footer>
+
+    <button type="button" class="btn-imprimir" onclick="window.print()" aria-label="Imprimir esta página">&#128424; Imprimir</button>
+</body>
+</html>
